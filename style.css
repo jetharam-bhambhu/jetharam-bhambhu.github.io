@@ -2,19 +2,19 @@
 
 /* ===== VARIABLES ===== */
 :root {
-  --bg: #f6f5f0;
+  --bg: #f5f5f5;
   --surface: #ffffff;
-  --surface-alt: #ededea;
-  --border: #c8c5be;
-  --border-strong: #1a1917;
-  --text-primary: #111110;
-  --text-secondary: #4a4845;
-  --text-muted: #8c8984;
-  --accent: #1a3a8c;
-  --accent-soft: #eef2ff;
-  --accent-mid: #93aaf0;
-  --shadow-sm: 3px 3px 0px #c8c5be;
-  --shadow-md: 4px 4px 0px #1a1917;
+  --surface-alt: #e8e8e8;
+  --border: #bebebe;
+  --border-strong: #111111;
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #888888;
+  --accent: #111111;
+  --accent-soft: #eeeeee;
+  --accent-mid: #aaaaaa;
+  --shadow-sm: 3px 3px 0px #aaaaaa;
+  --shadow-md: 4px 4px 0px #111111;
   --radius: 0px;
   --max-w: 780px;
   --transition: 0.18s ease;
@@ -96,16 +96,16 @@ nav {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1.5px solid var(--accent-mid);
+  color: var(--text-primary);
+  background: var(--surface-alt);
+  border: 1.5px solid var(--border-strong);
   padding: 0.28rem 0.8rem;
   margin-bottom: 1rem;
 }
 
 .hero-badge-dot {
   width: 6px; height: 6px;
-  background: var(--accent);
+  background: var(--border-strong);
   flex-shrink: 0;
   animation: blink 2s infinite;
 }
@@ -305,14 +305,14 @@ section:last-of-type { border-bottom: none; }
   transition: background var(--transition);
 }
 .research-area:last-child { border-bottom: none; }
-.research-area:hover { background: var(--accent-soft); }
+.research-area:hover { background: var(--surface-alt); }
 
 .ra-num {
   font-size: 0.72rem;
   font-weight: 700;
   color: var(--text-primary);
   background: var(--surface-alt);
-  border: 1.5px solid var(--border);
+  border: 1.5px solid var(--border-strong);
   width: 24px; height: 24px;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
@@ -339,7 +339,7 @@ section:last-of-type { border-bottom: none; }
   transition: all var(--transition);
 }
 .paper-item:last-child { border-bottom: none; }
-.paper-item:hover { border-left-color: var(--accent); background: var(--accent-soft); }
+.paper-item:hover { border-left-color: var(--border-strong); background: var(--surface-alt); }
 
 .paper-title {
   font-family: var(--font-serif);
@@ -357,9 +357,9 @@ section:last-of-type { border-bottom: none; }
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #166534;
-  background: #dcfce7;
-  border: 1px solid #86efac;
+  color: var(--text-secondary);
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
   padding: 0.1rem 0.45rem;
   margin-left: 0.5rem;
 }
@@ -380,7 +380,7 @@ section:last-of-type { border-bottom: none; }
   line-height: 1.4;
 }
 .talk-venue { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.35rem; }
-.talk-venue em { font-style: normal; color: var(--accent); text-decoration: none; }
+.talk-venue em { font-style: normal; color: var(--text-primary); font-weight: 500; text-decoration: none; }
 .talk-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.65; }
 
 /* ===== HONORS ===== */
@@ -394,7 +394,7 @@ section:last-of-type { border-bottom: none; }
 .honor-item:last-child { border-bottom: none; }
 .honor-bullet {
   font-size: 0.5rem;
-  color: var(--accent);
+  color: var(--border-strong);
   flex-shrink: 0;
   position: relative;
   top: -2px;
@@ -431,14 +431,15 @@ section:last-of-type { border-bottom: none; }
   flex-wrap: wrap;
 }
 .contact-links .hero-link {
-  border-color: #4a4845;
+  border-color: #555555;
   background: transparent;
-  color: var(--bg);
+  color: #dddddd;
 }
 .contact-links .hero-link:hover {
   border-color: var(--bg);
-  box-shadow: 3px 3px 0 #4a4845;
-  color: var(--bg);
+  box-shadow: 3px 3px 0 #555555;
+  color: #ffffff;
+  opacity: 1;
 }
 .contact-links .hero-link.primary {
   background: var(--bg);
@@ -446,7 +447,7 @@ section:last-of-type { border-bottom: none; }
   border-color: var(--bg);
 }
 .contact-links .hero-link.primary:hover {
-  box-shadow: 3px 3px 0 #4a4845;
+  box-shadow: 3px 3px 0 #555555;
 }
 
 /* ===== FOOTER ===== */
