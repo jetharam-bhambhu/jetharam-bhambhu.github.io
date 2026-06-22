@@ -402,6 +402,43 @@ section:last-of-type { border-bottom: none; }
 .honor-text { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; }
 .honor-text strong { color: var(--text-primary); font-weight: 600; }
 
+/* ===== BEYOND ===== */
+.beyond-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1.5px solid var(--border-strong);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.beyond-card {
+  background: var(--surface);
+  padding: 1.4rem 1.5rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+.beyond-card:nth-child(2n) { border-right: none; }
+.beyond-card:nth-child(3),
+.beyond-card:nth-child(4) { border-bottom: none; }
+.beyond-card:hover { background: var(--accent-soft); }
+
+.beyond-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.beyond-title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+.beyond-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+.beyond-desc em { color: var(--accent); font-style: normal; font-weight: 500; }
+
 /* ===== CONTACT ===== */
 .contact-block {
   background: var(--surface);
