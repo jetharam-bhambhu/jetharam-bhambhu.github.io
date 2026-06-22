@@ -2,19 +2,19 @@
 
 /* ===== VARIABLES ===== */
 :root {
-  --bg: #1c1916;
-  --surface: #252220;
-  --surface-alt: #2f2b28;
-  --border: #3d3835;
-  --border-strong: #c4622d;
-  --text-primary: #f0ebe5;
-  --text-secondary: #a89990;
-  --text-muted: #6b5f57;
-  --accent: #e07848;
-  --accent-soft: #2a1d15;
-  --accent-mid: #7a3a1e;
-  --shadow-sm: 3px 3px 0px #0d0b09;
-  --shadow-md: 4px 4px 0px #e07848;
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --surface-alt: #f5f1e8;
+  --border: #e2d9c8;
+  --border-strong: #1a1810;
+  --text-primary: #1a1810;
+  --text-secondary: #5a5244;
+  --text-muted: #9a8e80;
+  --accent: #c8880a;
+  --accent-soft: #fdf5e0;
+  --accent-mid: #e8b84a;
+  --shadow-sm: 3px 3px 0px #d8cebc;
+  --shadow-md: 4px 4px 0px #c8880a;
   --radius: 0px;
   --max-w: 780px;
   --transition: 0.18s ease;
