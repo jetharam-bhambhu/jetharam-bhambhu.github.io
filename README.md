@@ -4,7 +4,7 @@ Welcome to my personal GitHub Pages site!
 
 ## About
 
-This is the personal website/portfolio of **Jetharam Bhamb.
+This is the personal website/portfolio of **Jetharam Bhambhu**.
 
 ## Getting Started
 
