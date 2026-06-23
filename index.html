@@ -45,7 +45,7 @@
             </svg>
             CV (PDF)
           </a>
-          <a href="mailto:jetharam.research@gmail.com" class="academic-link" id="hero-email">
+          <a href="mailto:jetharam.research@gmail.com" class="academic-link" id="hero-email" onclick="copyEmail(event)">
             <svg viewBox="0 0 24 24">
               <rect x="2" y="4" width="20" height="16" rx="2" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -318,7 +318,7 @@
         <div class="beyond-card">
           <div class="beyond-icon">🎌</div>
           <div class="beyond-title">Anime</div>
-          <div class="beyond-desc"><em>One Piece</em> is my favourite. It rewards patience.</div>
+          <div class="beyond-desc">I follow <em>One Piece</em>. Its massive scale, intricate world-building, and decades-spanning narrative continuity are a masterclass in patient, structural storytelling.</div>
         </div>
       </div>
     </section>
@@ -333,7 +333,7 @@
           Feel free to reach out to discuss algorithms, optimization under uncertainty, or potential collaborations.
         </div>
         <div class="contact-links">
-          <a href="mailto:jetharam.research@gmail.com" class="hero-link primary" id="contact-email">
+          <a href="mailto:jetharam.research@gmail.com" class="hero-link primary" id="contact-email" onclick="copyEmail(event)">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
               stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -358,6 +358,27 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 8);
     });
+
+    function copyEmail(event) {
+      event.preventDefault();
+      navigator.clipboard.writeText("jetharam.research@gmail.com");
+      
+      const el = event.currentTarget;
+      
+      if (el.id === 'contact-email') {
+        el.innerHTML = '<span style="font-weight:600;">Email Copied!</span>';
+      } else {
+        el.innerHTML = '<svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;margin-right:2px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Copied!';
+      }
+      
+      setTimeout(() => {
+        if (el.id === 'contact-email') {
+          el.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg> jetharam.research@gmail.com';
+        } else {
+          el.innerHTML = '<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Email';
+        }
+      }, 2000);
+    }
   </script>
 
 </body>
