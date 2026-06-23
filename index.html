@@ -19,6 +19,7 @@
   <nav id="navbar">
     <a href="#top" class="nav-name">Jetharam Bhambhu</a>
     <ul class="nav-links">
+      <li><a href="#about">About</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -34,7 +35,7 @@
       <div>
         <h1 class="hero-name">Jetharam<br>Bhambhu</h1>
         <p class="hero-statement">
-          Incoming Marie Skłodowska-Curie PhD Fellow at TU Dortmund University working on bilevel optimization under uncertainty, approximation algorithms, and combinatorial optimization.
+          PhD researcher in combinatorial optimization at TU Dortmund University, focusing on approximation algorithms, mathematical programming, and optimization under uncertainty.
         </p>
         <div class="academic-links">
           <a href="CV.pdf" class="academic-link primary" id="hero-cv" target="_blank">
@@ -70,6 +71,23 @@
   <hr class="divider" />
 
   <main class="page">
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <div class="section-eyebrow">About Me</div>
+      <h2 class="section-title">Biography</h2>
+      <div class="about-text">
+        <p>
+          I am a PhD student in <strong>Prof. Christoph Buchheim's group</strong> at <strong>TU Dortmund University</strong> (starting October 2026), where I am supported by the Marie Skłodowska-Curie Actions (MSCA) Doctoral Network ALMOA. My doctoral research focuses on bilevel optimization under uncertainty.
+        </p>
+        <p>
+          Previously, I completed my <strong>BS-MS dual degree in Mathematics</strong> at the <strong>Indian Institute of Science Education and Research (IISER), Pune</strong>. My master's thesis, supervised by <strong>Prof. Naveen Garg</strong> and <strong>Prof. Amit Kumar</strong> at <strong>IIT Delhi</strong>, studied approximation algorithms for a submodular generalization of the Interval Stabbing Problem.
+        </p>
+        <p>
+          Broadly, I am interested in designing polynomial-time algorithms with provable approximation guarantees for NP-hard problems, utilizing linear programming relaxations, rounding schemes, and submodular optimization frameworks.
+        </p>
+      </div>
+    </section>
 
     <!-- ===== NEWS ===== -->
     <section id="news">
@@ -116,19 +134,17 @@
           </div>
           <details class="thesis-details">
             <summary class="project-link" style="cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem; font-weight: 600; color: var(--accent);">
-              Thesis Abstract &amp; Contributions
+              Thesis Abstract &amp; Details
             </summary>
             <div class="thesis-abstract-content" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary);">
               <p><strong>Supervisors:</strong> Prof. Naveen Garg &amp; Prof. Amit Kumar (IIT Delhi)</p>
-              <p style="margin-top: 0.5rem;"><strong>Abstract:</strong> The Interval Stabbing Problem is a classical combinatorial optimization problem where the goal is to select a minimum-cost set of points to pierce or "stab" a given set of intervals on a line. In this thesis, we study a generalization of this problem where the stabbing costs are modeled via submodular functions, capturing the realistic economic scenario of diminishing returns or joint economies of scale.</p>
-              <p style="margin-top: 0.5rem;">Under a submodular cost structure, the traditional greedy and LP-rounding approaches for interval stabbing do not directly apply due to the non-additivity of costs. We present approximation algorithms for this submodular interval stabbing problem under various constraint structures by leveraging LP relaxations with submodular objectives, rounding schemes, and primal-dual methods.</p>
-              <p style="margin-top: 0.5rem;"><strong>Key Contributions:</strong></p>
-              <ul style="padding-left: 1.25rem; margin-top: 0.25rem; display: flex; flex-direction: column; gap: 0.35rem;">
-                <li>Formulated the Submodular Interval Stabbing Problem (SISP), unifying several interval covering models.</li>
-                <li>Developed an LP-rounding approximation algorithm for SISP with a provable approximation factor.</li>
-                <li>Designed primal-dual approximation algorithms to handle specific subclasses of interval structures.</li>
-                <li>Established computational complexity and inapproximability limits.</li>
-              </ul>
+              <p style="margin-top: 0.5rem;"><strong>Abstract:</strong></p>
+              <p style="margin-top: 0.25rem;">
+                This thesis investigates the Submodular Interval Stabbing Problem (SISP), a generalized optimization framework where jobs associated with temporal intervals must be served within their respective windows to minimize a total cost governed by a submodular function. This model effectively captures the "diminishing returns" or economies of scale inherent in batch processing, data aggregation, and consolidated service operations.
+              </p>
+              <p style="margin-top: 0.5rem;">
+                We provide a comprehensive mathematical analysis of SISP, spanning computational complexity, optimal algorithms for restricted cases, and approximation strategies for hierarchical structures. We establish that SISP is APX-hard, even when restricted to a strict 2-level laminar structure with monotone submodular functions. Through an approximation-preserving reduction from the Minimum Vertex Cover problem on cubic graphs, we prove that the optimal cost is exactly 2|E| + OPT<sub>VC</sub>. For concave functions of cardinality, we develop a dynamic programming algorithm and rigorously prove its optimality with a time complexity of O(n<sup>3</sup>). We extend our study to the Multi-Level Aggregation Problem (MLAP). By employing geometric time discretization and reduction to a prize-collecting variant, we present an 8-approximation algorithm for the general version involving both holding and delay costs (MLAP-HD). We analyze the worst-case performance of common greedy strategies, providing non-constant lower bounds for the Ratio-Greedy (&Omega;(ln n)) and Left-to-Right Swapping (&Omega;(n)) algorithms. Our results map the boundary between tractability and NP-hardness for submodular aggregation, demonstrating that while the general problem is computationally difficult, structured laminar and hierarchical instances admit robust approximation frameworks.
+              </p>
             </div>
           </details>
         </div>
