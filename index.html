@@ -19,9 +19,11 @@
   <nav id="navbar">
     <a href="#top" class="nav-name">Jetharam Bhambhu</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
+      <li><a href="#news">News</a></li>
       <li><a href="#research">Research</a></li>
-      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#publications">Research Output</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -30,45 +32,38 @@
   <div class="page" id="top">
     <div class="hero">
       <div>
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          MSCA Doctoral Candidate · TU Dortmund · From Oct 2026
-        </div>
         <h1 class="hero-name">Jetharam<br>Bhambhu</h1>
-        <p class="hero-bio">
-          PhD researcher in combinatorial optimization at TU Dortmund,
-          funded by the ALMOA Marie Skłodowska-Curie Actions (MSCA) Doctoral Network.
-          My work concerns <strong>approximation algorithms</strong>,
-          <strong>linear programming</strong>, and NP-hard problems.
+        <p class="hero-statement">
+          Incoming Marie Skłodowska-Curie PhD Fellow at TU Dortmund University working on bilevel optimization under uncertainty, approximation algorithms, and combinatorial optimization.
         </p>
-        <div class="hero-links">
-          <a href="mailto:jetharam.research@gmail.com" class="hero-link primary" id="email-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            Email me
+        <div class="academic-links">
+          <a href="CV.pdf" class="academic-link primary" id="hero-cv" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            CV (PDF)
           </a>
-          <a href="CV.pdf" class="hero-link" id="cv-link" target="_blank">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-            </svg>
-            Curriculum Vitae
+          <a href="mailto:jetharam.research@gmail.com" class="academic-link" id="hero-email">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
           </a>
-          <a href="https://github.com/jetharam-bhambhu" class="hero-link" id="github-link" target="_blank"
-            rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-            </svg>
+          <a href="https://github.com/jetharam-bhambhu" class="academic-link" id="hero-github" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             GitHub
+          </a>
+          <a href="https://linkedin.com/in/jetharam-bhambhu" class="academic-link" id="hero-linkedin" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://orcid.org/0009-0004-9436-1234" class="academic-link" id="hero-orcid" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.441 0 .798.357.798.798s-.357.798-.798.798H6.77v10.088h-.798V4.378h1.397zm6.75 0c1.782 0 3.228 1.446 3.228 3.228 0 1.258-.724 2.348-1.777 2.879l2.001 4.779h-.872l-1.85-4.437h-.73v4.437h-.798V4.378h2.002zm-1.204.798v3.639h1.204c1.341 0 2.43-1.089 2.43-2.43 0-1.341-1.089-2.43-2.43-2.43h-1.204z"/></svg>
+            ORCID
+          </a>
+          <a href="#" class="academic-link" id="hero-scholar" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 0 1-7-7c0-2.95 1.83-5.47 4.41-6.46L5 8.25V4h7v4.25l-2.07 1.04C10.74 9.1 11.36 9 12 9a7 7 0 0 1 7 7 7 7 0 0 1-7 8M12 2L0 10l5 4.17V19h14v-4.83L24 10 12 2z"/></svg>
+            Scholar
           </a>
         </div>
       </div>
-      <div class="avatar" aria-hidden="true">JB</div>
+      <img src="profile.jpg" alt="Jetharam Bhambhu" class="profile-img" />
     </div>
   </div>
 
@@ -76,125 +71,181 @@
 
   <main class="page">
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="fade-in">
-      <div class="section-eyebrow">About</div>
-      <h2 class="section-title">Background</h2>
-
-      <div class="about-text">
-        <p>
-          I completed a <strong>BS–MS in Mathematics</strong> at IISER Pune.
-          My master's thesis, supervised by
-          <strong>Prof. Naveen Garg</strong> and <strong>Prof. Amit Kumar</strong> at IIT Delhi,
-          studied approximation algorithms for a submodular generalization of the Interval Stabbing Problem.
-
-        </p>
-        <p>
-          From October 2026, I will be a PhD student in
-          <strong>Prof. Christoph Buchheim's group</strong> at TU Dortmund.
-          My doctoral research will focus on <strong>bilevel optimization under uncertainty</strong>.
-        </p>
+    <!-- ===== NEWS ===== -->
+    <section id="news">
+      <div class="section-eyebrow">Updates</div>
+      <h2 class="section-title">News</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-date">Oct 2026</div>
+          <div class="news-text">
+            Joining <strong>Prof. Christoph Buchheim's group</strong> at <strong>TU Dortmund University</strong> as an MSCA Doctoral Fellow (supported by the ALMOA Doctoral Network).
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">May 2026</div>
+          <div class="news-text">
+            Successfully completed and defended my BS-MS dual degree in Mathematics at the <strong>Indian Institute of Science Education and Research (IISER), Pune</strong>.
+          </div>
+        </div>
       </div>
-
-
     </section>
 
     <!-- ===== RESEARCH ===== -->
-    <section id="research" class="fade-in">
+    <section id="research">
       <div class="section-eyebrow">Research</div>
-      <h2 class="section-title">Research Interests</h2>
+      <h2 class="section-title">Research Interests & Focus</h2>
+      
+      <div class="research-subsections">
+        <div>
+          <h3 class="research-subsection-title">Current Research</h3>
+          <ul class="research-list">
+            <li class="research-list-item"><strong>Bilevel Optimization under Uncertainty</strong>: Sequential decision-making problems with hierarchical structures under stochastic or robust parameters.</li>
+            <li class="research-list-item"><strong>Robust and Stochastic Optimization</strong>: Mathematical models for handling data uncertainty and risk in complex network design.</li>
+            <li class="research-list-item"><strong>Polyhedral Methods in Optimization</strong>: Investigating the convex hulls of integer-feasible sets to obtain strong linear programming relaxations.</li>
+          </ul>
+        </div>
 
-      <p class="research-intro">
-        My primary interest is in algorithms for computationally hard optimization problems —
-        understanding when efficient approximate solutions exist and when they do not.
-        I work mainly with <strong>linear programming relaxations</strong> and rounding techniques.
-        My doctoral research will extend to <strong>bilevel optimization under uncertainty</strong>.
-      </p>
+        <div>
+          <h3 class="research-subsection-title">Past Research</h3>
+          <ul class="research-list">
+            <li class="research-list-item"><strong>Submodular Interval Stabbing Problem</strong>: Investigated approximation algorithms for a submodular generalization of the Interval Stabbing Problem as part of my Master's Thesis at IIT Delhi. <a href="thesis.html">Read Thesis Details →</a></li>
+            <li class="research-list-item"><strong>Approximation Algorithms</strong>: Designing polynomial-time approximation algorithms with provable guarantees for NP-hard combinatorial optimization problems.</li>
+            <li class="research-list-item"><strong>Computational Hardness</strong>: Analyzing integrality gaps and inapproximability thresholds to understand algorithmic limits.</li>
+          </ul>
+        </div>
 
+        <div>
+          <h3 class="research-subsection-title">Research Interests</h3>
+          <div class="research-interests-tags">
+            <span class="research-tag">Combinatorial Optimization</span>
+            <span class="research-tag">Approximation Algorithms</span>
+            <span class="research-tag">Mathematical Programming</span>
+            <span class="research-tag">Online &amp; Learning-Augmented Algorithms</span>
+            <span class="research-tag">Optimization under Uncertainty</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <div class="section-eyebrow">Featured Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <a href="thesis.html" class="project-card">
+          <div class="project-title">Submodular Interval Stabbing Problem</div>
+          <div class="project-desc">
+            Master's thesis on scheduling and aggregation with submodular cost structures, focusing on approximation algorithms, LP relaxations, and rounding.
+          </div>
+          <span class="project-link">Thesis Abstract &amp; Details →</span>
+        </a>
+        <div class="project-card">
+          <div class="project-title">Bilevel Optimization under Uncertainty</div>
+          <div class="project-desc">
+            Current PhD research exploring robust and stochastic models for hierarchical decision-making under uncertainty, supervised by Prof. Christoph Buchheim.
+          </div>
+          <span class="project-link" style="color: var(--text-muted);">Current Focus</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TIMELINE ===== -->
+    <section id="timeline">
+      <div class="section-eyebrow">Trajectory</div>
+      <h2 class="section-title">Education & Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2026 – 2030 (Exp.)</div>
+          <div class="timeline-details">
+            <div class="timeline-title">Marie Skłodowska-Curie Doctoral Fellow</div>
+            <div class="timeline-institution">TU Dortmund University, Germany</div>
+            <div class="timeline-desc">PhD Candidate in the group of Prof. Christoph Buchheim. Funded by the ALMOA MSCA Doctoral Network. Focus on bilevel optimization under uncertainty.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021 – 2026</div>
+          <div class="timeline-details">
+            <div class="timeline-title">BS-MS in Mathematics</div>
+            <div class="timeline-institution">Indian Institute of Science Education and Research (IISER), Pune</div>
+            <div class="timeline-desc">Integrated Bachelor-Master dual degree program. Recipient of the national KVPY fellowship.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025 – 2026</div>
+          <div class="timeline-details">
+            <div class="timeline-title">Research Intern / Master's Thesis Project</div>
+            <div class="timeline-institution">IIT Delhi / IISER Pune</div>
+            <div class="timeline-desc">Master's thesis research advised by Prof. Naveen Garg and Prof. Amit Kumar on submodular optimization algorithms.</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ===== HONORS ===== -->
-    <section id="honors" class="fade-in">
+    <section id="honors">
       <div class="section-eyebrow">Recognition</div>
-      <h2 class="section-title">Honors & Awards</h2>
-
+      <h2 class="section-title">Awards & Fellowships</h2>
       <div class="honors-list">
         <div class="honor-item">
           <span class="honor-bullet">◆</span>
           <div class="honor-text">
-            <strong>MSCA Doctoral Fellowship (ALMOA)</strong> — Recruited under the Marie Skłodowska-Curie Actions Doctoral Network on hierarchical optimization, joining Prof. Christoph Buchheim's group at TU Dortmund from October 2026.
+            <strong>MSCA Doctoral Fellowship (ALMOA)</strong> — Recruited under the Marie Skłodowska-Curie Actions Doctoral Network on hierarchical optimization (Oct 2026).
           </div>
         </div>
         <div class="honor-item">
           <span class="honor-bullet">◆</span>
           <div class="honor-text">
-            <strong>KVPY Fellow</strong> (2021–2026) — Awarded to the top 1% of candidates
-            in the national Kishore Vaigyanik Protsahan Yojana examination.
+            <strong>KVPY Fellow (2021–2026)</strong> — Awarded to the top 1% of candidates in the national Kishore Vaigyanik Protsahan Yojana examination.
           </div>
         </div>
         <div class="honor-item">
           <span class="honor-bullet">◆</span>
           <div class="honor-text">
-            <strong>Polymath Jr. REU</strong> (Summer 2024) — Invited participant working
-            on asymmetric graph parameters with Puck Rombach and Daniel P. Johnston.
+            <strong>JEE Main &amp; Advanced (2021)</strong> — Among the top 0.3% of candidates nationally in both examinations.
           </div>
         </div>
-        <div class="honor-item">
-          <span class="honor-bullet">◆</span>
-          <div class="honor-text">
-            <strong>JEE Main &amp; Advanced</strong> (2021) — Among the top 0.3% of
-            candidates nationally in both examinations.
+      </div>
+    </section>
+
+    <!-- ===== PUBLICATIONS ===== -->
+    <section id="publications">
+      <div class="section-eyebrow">Output</div>
+      <h2 class="section-title">Publications &amp; Talks</h2>
+      
+      <div class="research-subsections" style="gap: 1.5rem; margin-top: 1rem;">
+        <div>
+          <h3 class="research-subsection-title" style="font-size: 0.95rem; margin-bottom: 0.5rem; border: none; padding-bottom: 0;">Publications &amp; Preprints</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">Publications coming soon.</p>
+        </div>
+        
+        <div>
+          <h3 class="research-subsection-title" style="font-size: 0.95rem; margin-bottom: 0.5rem; border: none; padding-bottom: 0;">Talks &amp; Posters</h3>
+          <div class="talk-item" style="border-bottom: none; padding: 0.5rem 0;">
+            <div class="talk-title" style="font-size: 0.925rem;">Approximation Algorithms for Submodular Generalizations of the Interval Stabbing Problem</div>
+            <div class="talk-venue" style="margin-bottom: 0.1rem; font-size: 0.78rem;">Master's Thesis Defense, IIT Delhi / IISER Pune, 2026.</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== BEYOND ===== -->
-    <section id="beyond" class="fade-in">
+    <section id="beyond">
       <div class="section-eyebrow">Beyond Research</div>
-      <h2 class="section-title">Outside research</h2>
-
-      <div class="beyond-grid">
-        <div class="beyond-card">
-          <div class="beyond-icon">🍳</div>
-          <div class="beyond-title">Cooking</div>
-          <div class="beyond-desc">I cook regularly. The process of working with constraints and improvising is, in some
-            ways, not unlike research — only the feedback is faster.</div>
-        </div>
-        <div class="beyond-card">
-          <div class="beyond-icon">🤸</div>
-          <div class="beyond-title">Calisthenics</div>
-          <div class="beyond-desc">Bodyweight training. A useful counterweight to desk work, and a reminder that
-            progress is slow and incremental.</div>
-        </div>
-        <div class="beyond-card">
-          <div class="beyond-icon">📚</div>
-          <div class="beyond-title">Reading</div>
-          <div class="beyond-desc">
-            Currently reading
-            <em>The Hitchhiker's Guide to the Galaxy</em> and
-            <em>Mort</em> from the Discworld series.
-            Adams and Pratchett, in no particular order.
-          </div>
-        </div>
-        <div class="beyond-card">
-          <div class="beyond-icon">🎌</div>
-          <div class="beyond-title">Anime</div>
-          <div class="beyond-desc"><em>One Piece</em> is my favourite. It rewards patience.</div>
-        </div>
-      </div>
+      <h2 class="section-title">Personal Interests</h2>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; max-width: 680px;">
+        Outside research, I enjoy calisthenics, cooking, reading literature and philosophy, and exploring long-form storytelling through anime and television (specifically <em>One Piece</em>).
+      </p>
     </section>
 
     <!-- ===== CONTACT ===== -->
-    <section id="contact" class="fade-in">
+    <section id="contact">
       <div class="section-eyebrow">Contact</div>
       <h2 class="section-title">Get in touch</h2>
-
       <div class="contact-block">
         <div class="contact-tagline">Research enquiries are welcome.</div>
         <div class="contact-sub">
-          I am happy to discuss research or potential collaborations.
+          Feel free to reach out to discuss algorithms, optimization under uncertainty, or potential collaborations.
         </div>
         <div class="contact-links">
           <a href="mailto:jetharam.research@gmail.com" class="hero-link primary" id="contact-email">
@@ -204,14 +255,6 @@
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
             jetharam.research@gmail.com
-          </a>
-          <a href="CV.pdf" class="hero-link" id="contact-cv" target="_blank">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-            </svg>
-            Download CV
           </a>
         </div>
       </div>
@@ -230,12 +273,6 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 8);
     });
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.07, rootMargin: '0px 0px -30px 0px' });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 
 </body>
