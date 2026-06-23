@@ -94,37 +94,13 @@
     <!-- ===== RESEARCH ===== -->
     <section id="research">
       <div class="section-eyebrow">Research</div>
-      <h2 class="section-title">Research Interests & Focus</h2>
-      
-      <div class="research-subsections">
-        <div>
-          <h3 class="research-subsection-title">Current Research</h3>
-          <ul class="research-list">
-            <li class="research-list-item"><strong>Bilevel Optimization under Uncertainty</strong>: Sequential decision-making problems with hierarchical structures under stochastic or robust parameters.</li>
-            <li class="research-list-item"><strong>Robust and Stochastic Optimization</strong>: Mathematical models for handling data uncertainty and risk in complex network design.</li>
-            <li class="research-list-item"><strong>Polyhedral Methods in Optimization</strong>: Investigating the convex hulls of integer-feasible sets to obtain strong linear programming relaxations.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="research-subsection-title">Past Research</h3>
-          <ul class="research-list">
-            <li class="research-list-item"><strong>Submodular Interval Stabbing Problem</strong>: Investigated approximation algorithms for a submodular generalization of the Interval Stabbing Problem as part of my Master's Thesis at IIT Delhi. <a href="thesis.html">Read Thesis Details →</a></li>
-            <li class="research-list-item"><strong>Approximation Algorithms</strong>: Designing polynomial-time approximation algorithms with provable guarantees for NP-hard combinatorial optimization problems.</li>
-            <li class="research-list-item"><strong>Computational Hardness</strong>: Analyzing integrality gaps and inapproximability thresholds to understand algorithmic limits.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="research-subsection-title">Research Interests</h3>
-          <div class="research-interests-tags">
-            <span class="research-tag">Combinatorial Optimization</span>
-            <span class="research-tag">Approximation Algorithms</span>
-            <span class="research-tag">Mathematical Programming</span>
-            <span class="research-tag">Online &amp; Learning-Augmented Algorithms</span>
-            <span class="research-tag">Optimization under Uncertainty</span>
-          </div>
-        </div>
+      <h2 class="section-title">Research Interests</h2>
+      <div class="research-interests-tags" style="margin-top: 1rem;">
+        <span class="research-tag">Combinatorial Optimization</span>
+        <span class="research-tag">Approximation Algorithms</span>
+        <span class="research-tag">Mathematical Programming</span>
+        <span class="research-tag">Online &amp; Learning-Augmented Algorithms</span>
+        <span class="research-tag">Optimization under Uncertainty</span>
       </div>
     </section>
 
@@ -133,13 +109,29 @@
       <div class="section-eyebrow">Featured Work</div>
       <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid">
-        <a href="thesis.html" class="project-card">
+        <div class="project-card">
           <div class="project-title">Submodular Interval Stabbing Problem</div>
-          <div class="project-desc">
+          <div class="project-desc" style="margin-bottom: 1rem;">
             Master's thesis on scheduling and aggregation with submodular cost structures, focusing on approximation algorithms, LP relaxations, and rounding.
           </div>
-          <span class="project-link">Thesis Abstract &amp; Details →</span>
-        </a>
+          <details class="thesis-details">
+            <summary class="project-link" style="cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem; font-weight: 600; color: var(--accent);">
+              Thesis Abstract &amp; Contributions
+            </summary>
+            <div class="thesis-abstract-content" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary);">
+              <p><strong>Supervisors:</strong> Prof. Naveen Garg &amp; Prof. Amit Kumar (IIT Delhi)</p>
+              <p style="margin-top: 0.5rem;"><strong>Abstract:</strong> The Interval Stabbing Problem is a classical combinatorial optimization problem where the goal is to select a minimum-cost set of points to pierce or "stab" a given set of intervals on a line. In this thesis, we study a generalization of this problem where the stabbing costs are modeled via submodular functions, capturing the realistic economic scenario of diminishing returns or joint economies of scale.</p>
+              <p style="margin-top: 0.5rem;">Under a submodular cost structure, the traditional greedy and LP-rounding approaches for interval stabbing do not directly apply due to the non-additivity of costs. We present approximation algorithms for this submodular interval stabbing problem under various constraint structures by leveraging LP relaxations with submodular objectives, rounding schemes, and primal-dual methods.</p>
+              <p style="margin-top: 0.5rem;"><strong>Key Contributions:</strong></p>
+              <ul style="padding-left: 1.25rem; margin-top: 0.25rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                <li>Formulated the Submodular Interval Stabbing Problem (SISP), unifying several interval covering models.</li>
+                <li>Developed an LP-rounding approximation algorithm for SISP with a provable approximation factor.</li>
+                <li>Designed primal-dual approximation algorithms to handle specific subclasses of interval structures.</li>
+                <li>Established computational complexity and inapproximability limits.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
         <div class="project-card">
           <div class="project-title">Bilevel Optimization under Uncertainty</div>
           <div class="project-desc">
